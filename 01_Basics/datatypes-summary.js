@@ -73,3 +73,35 @@ console.log(typeof myFunction);
 
 
 //  const bigNumber = 3456543576654356754n    type - BigInt
+
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+// Stack  (Primitive) , Heap Memory (Non - Primitive)
+
+
+
+let myYoutubename = "abhimarvelous"  //  Datatype string h to primitive datatypes hua,
+
+let anotheryoutube = myYoutubename   //  yha pr anotheryoutube ko myyoutube wala value de di
+
+anotheryoutube = "meraminati"      //  now we change the value of anotheryoutube should myyoutube value is also change 
+
+console.log(myYoutubename);  //   output - abhimarvelous
+console.log(anotheryoutube);  //  output - meraminati ; There is no change in myyoutubename value because it use stack memory copy the value of myoutube name 
+
+
+let userOne = {
+    email: "user@google.com",
+    upi : "rahuk@ybl"
+}
+
+let userTwo = userOne
+
+
+userTwo.email = "abhi@ggolge.com"
+
+console.log(userOne.email);  //  output - abhi@ggolge.com
+console.log(userTwo.email);  //  output - abhi@ggolge.com; same bacause it use call by refrence it pass only refrence 
